@@ -7,6 +7,7 @@
  */
 const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
 
+
 // Function to fetch and load the JSON data
 async function fetchJSON() {
   const response = await fetch(JSON_URL);
@@ -51,18 +52,18 @@ function fmtCurrency(v) {
   return new Intl.NumberFormat('en-BD', { style: 'currency', currency: 'BDT', maximumFractionDigits: 0 }).format(n);
 }
 
-// Get unique categories or shops
+// Get unique categories
 function unique(arr) {
   return [...new Set(arr.filter(Boolean))];
 }
 
-// Hydrate filters for categories and shops
+// Hydrate filters for categories
 function hydrateFilters(items) {
   // Category dropdown
   const cats = unique(items.map(i => i.category)).sort((a, b) => a.localeCompare(b));
   els.category.innerHTML = '<option value="">All categories</option>' + cats.map(c => `<option value="${c}">${c}</option>`).join('');
 
-  // Shop dropdown
+  // Shop dropdown (without filtering functionality)
   const shops = unique(items.map(i => i.shop)).sort((a, b) => a.localeCompare(b));
   els.shops.innerHTML = '';
   const shopSelect = $('select', { id: 'shopSelect', className: 'shop-select' });
@@ -82,12 +83,10 @@ function hydrateFilters(items) {
 function applyFilters() {
   const q = els.search.value.trim().toLowerCase();
   const cat = els.category.value;
-  const shop = els.shops.querySelector('select').value;
   const list = ALL_ITEMS.filter(it => {
     const matchesQ = !q || [it.name, it.shop, it.category].some(v => (v || '').toLowerCase().includes(q));
     const matchesCat = !cat || it.category === cat;
-    const matchesShop = !shop || it.shop === shop;
-    return matchesQ && matchesCat && matchesShop;
+    return matchesQ && matchesCat;
   });
 
   switch (els.sort.value) {
@@ -183,3 +182,4 @@ els.zip.addEventListener('change', e => {
 
 // Initial load
 load();
+
