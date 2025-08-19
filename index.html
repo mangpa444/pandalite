@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foodpanda Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo"><span class="dot">fp</span> Foodpanda Lite</div>
+            <div class="zip">
+                <label for="zip">Delivery to</label>
+                <input id="zip" maxlength="4" inputmode="numeric" placeholder="e.g. 1212" />
+            </div>
+        </div>
+        <div class="filters">
+            <input id="search" class="searchbar" placeholder="Search dishes or shops…" />
+            <select id="category">
+                <option value="">All categories</option>
+            </select>
+            <div id="shops" class="chips" aria-label="Shops filter"></div>
+            <select id="sort" class="sort">
+                <option value="relevance">Sort: Relevance</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="name-asc">Name: A → Z</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="toolbar">
+            <div id="resultCount" aria-live="polite"></div>
+            <button class="btn outline" id="reload">Reload sheet</button>
+        </div>
+
+        <div id="grid" class="grid" aria-live="polite" aria-busy="true"></div>
+
+        <div id="empty" class="empty" hidden>
+            No items match your filters. Try clearing search, shop, or category.
+        </div>
+    </main>
+
+    <footer>
+        <small>Demo app. Data is read‑only from a public Google Sheet. Combine items across multiple shops, light theme, super tiny JS. Built for Bangladesh (4‑digit postal codes). <a href="#" id="how">How to connect your Sheet</a>.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
