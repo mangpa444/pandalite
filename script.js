@@ -5,7 +5,7 @@
  * 1) Upload your c.json to the /data/ folder in your GitHub repository.
  * 2) Use fetch to retrieve and display the data from the JSON.
  */
-const JSON_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/c.json";  // Update with your JSON file URL
+const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
 
 // Function to fetch and load the JSON data
 async function fetchJSON() {
