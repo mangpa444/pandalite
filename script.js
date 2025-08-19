@@ -11,7 +11,7 @@ const SHEET_ID = "1EkRtmpV6sDOH8XYje1Uft6jc0ukp8LoRgf5VWPDP5kY";   // ← put yo
 const SHEET_GID = "0";                   // ← usually 0 for the first tab
 
 // If you prefer to paste the full URL, set SHEET_URL and we'll parse the ID & gid for you.
-const SHEET_URL = ""; // e.g. "https://docs.google.com/spreadsheets/d/1AbC.../edit#gid=0"
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1EkRtmpV6sDOH8XYje1Uft6jc0ukp8LoRgf5VWPDP5kY/edit?pli=1&gid=0#gid=0"; // e.g. "https://docs.google.com/spreadsheets/d/1AbC.../edit#gid=0"
 
 /* === APP STATE === */
 let ALL_ITEMS = [];
