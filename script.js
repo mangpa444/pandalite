@@ -8,7 +8,7 @@
  * 4) Columns must be: [0]=Name, [1]=Image URL, [2]=Price, [3]=Shop, [4]=Category
  */
 const SHEET_ID = "1EkRtmpV6sDOH8XYje1Uft6jc0ukp8LoRgf5VWPDP5kY";   // Your Sheet ID
-const SHEET_GID = "0";  // Sheet name or GID, default is 0 for first tab
+const SHEET_GID = "q";  // Sheet name or GID, default is 0 for first tab
 
 // Function to generate the endpoint for fetching the Google Sheet data
 function getSheetEndpoint() {
