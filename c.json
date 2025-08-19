@@ -1,0 +1,450 @@
+[
+  {
+    "Item Name": "Rice (1 kg)",
+    "Image Link": "https://i.chaldn.com/_mpimage/paijam-rice-boiled-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D80161&q=best&v=1",
+    "Price (BDT)": 50,
+    "Shop Name": "Village Grocer",
+    "Category": "Grains"
+  },
+  {
+    "Item Name": "Wheat Flour (1 kg)",
+    "Image Link": "https://d2t8nl1y0ie1km.cloudfront.net/images/65fa94f0115075f231ec5c18_Teer-Whole-Wheat-Atta-1kg_1.webp",
+    "Price (BDT)": 45,
+    "Shop Name": "Village Grocer",
+    "Category": "Grains"
+  },
+  {
+    "Item Name": "Sugar (1 kg)",
+    "Image Link": "https://i.chaldn.com/_mpimage/loose-white-sugar-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D98364&q=best&v=1",
+    "Price (BDT)": 60,
+    "Shop Name": "Local Mart",
+    "Category": "Sweeteners"
+  },
+  {
+    "Item Name": "Salt (1 kg)",
+    "Image Link": "https://i.chaldn.com/_mpimage/aci-pure-salt-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D47100&q=best&v=1",
+    "Price (BDT)": 25,
+    "Shop Name": "Local Mart",
+    "Category": "Spices"
+  },
+  {
+    "Item Name": "Cooking Oil (1 liter)",
+    "Image Link": "https://i.chaldn.com/_mpimage/fresh-fortified-soyabean-oil-1-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D153828&q=best&v=1&m=400",
+    "Price (BDT)": 150,
+    "Shop Name": "Pure Oil Shop",
+    "Category": "Cooking Oils"
+  },
+  {
+    "Item Name": "Milk (1 liter)",
+    "Image Link": "https://images.othoba.com/images/thumbs/0071389_pran-mk-uht-milk-1-ltr.jpeg",
+    "Price (BDT)": 40,
+    "Shop Name": "Dairy Farm Shop",
+    "Category": "Dairy"
+  },
+  {
+    "Item Name": "Eggs (12 pcs)",
+    "Image Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YL6CCvyORiPmVGgzLRLGfsc6ru95icxvvw&s",
+    "Price (BDT)": 120,
+    "Shop Name": "Village Market",
+    "Category": "Dairy"
+  },
+  {
+    "Item Name": "Potatoes (1 kg)",
+    "Image Link": "https://images.othoba.com/images/thumbs/0332578_potato-seasonal-pack-1-kg.jpeg",
+    "Price (BDT)": 35,
+    "Shop Name": "Local Vegetables",
+    "Category": "Vegetables"
+  },
+  {
+    "Item Name": "Tomatoes (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 60,
+    "Shop Name": "Local Vegetables",
+    "Category": "Vegetables"
+  },
+  {
+    "Item Name": "Onions (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 55,
+    "Shop Name": "Fresh Mart",
+    "Category": "Vegetables"
+  },
+  {
+    "Item Name": "Garlic (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 100,
+    "Shop Name": "Spices World",
+    "Category": "Spices"
+  },
+  {
+    "Item Name": "Ginger (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 90,
+    "Shop Name": "Spices World",
+    "Category": "Spices"
+  },
+  {
+    "Item Name": "Green Chilies (250 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 30,
+    "Shop Name": "Fresh Mart",
+    "Category": "Vegetables"
+  },
+  {
+    "Item Name": "Fresh Fish (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Fisherman's Shop",
+    "Category": "Meat & Seafood"
+  },
+  {
+    "Item Name": "Chicken (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 300,
+    "Shop Name": "Poultry Shop",
+    "Category": "Meat & Seafood"
+  },
+  {
+    "Item Name": "Beef (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 350,
+    "Shop Name": "Butcher's Shop",
+    "Category": "Meat & Seafood"
+  },
+  {
+    "Item Name": "Vegetables (Mixed, 1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 50,
+    "Shop Name": "Green Market",
+    "Category": "Vegetables"
+  },
+  {
+    "Item Name": "Fruits (Mixed, 1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 80,
+    "Shop Name": "Fruit Basket",
+    "Category": "Fruits"
+  },
+  {
+    "Item Name": "Bananas (1 bunch)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 40,
+    "Shop Name": "Fruit Basket",
+    "Category": "Fruits"
+  },
+  {
+    "Item Name": "Apples (500 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 100,
+    "Shop Name": "Local Fruits",
+    "Category": "Fruits"
+  },
+  {
+    "Item Name": "Oranges (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 90,
+    "Shop Name": "Local Fruits",
+    "Category": "Fruits"
+  },
+  {
+    "Item Name": "Coffee (250 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 180,
+    "Shop Name": "Grocery Mart",
+    "Category": "Beverages"
+  },
+  {
+    "Item Name": "Tea (250 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 150,
+    "Shop Name": "Grocery Mart",
+    "Category": "Beverages"
+  },
+  {
+    "Item Name": "Biscuits (Pack)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 35,
+    "Shop Name": "Village Snack Shop",
+    "Category": "Snacks"
+  },
+  {
+    "Item Name": "Instant Noodles (Pack)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 25,
+    "Shop Name": "Snack World",
+    "Category": "Snacks"
+  },
+  {
+    "Item Name": "Soap (1 bar)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 20,
+    "Shop Name": "Hygiene Hub",
+    "Category": "Personal Care"
+  },
+  {
+    "Item Name": "Shampoo (200 ml)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 50,
+    "Shop Name": "Beauty Shop",
+    "Category": "Personal Care"
+  },
+  {
+    "Item Name": "Toothpaste (100 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 30,
+    "Shop Name": "Hygiene Hub",
+    "Category": "Personal Care"
+  },
+  {
+    "Item Name": "Detergent Powder (500 gm)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 40,
+    "Shop Name": "Household Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Cleaning Liquid (500 ml)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 60,
+    "Shop Name": "Household Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Mosquito Repellent (100 ml)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 45,
+    "Shop Name": "Health Store",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Matches (Pack)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 10,
+    "Shop Name": "Local Mart",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Flashlight (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 150,
+    "Shop Name": "Hardware Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Lantern (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Hardware Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Wooden Chair",
+    "Image Link": "Image Link",
+    "Price (BDT)": 800,
+    "Shop Name": "Village Furniture",
+    "Category": "Furniture"
+  },
+  {
+    "Item Name": "Wooden Table",
+    "Image Link": "Image Link",
+    "Price (BDT)": 1200,
+    "Shop Name": "Village Furniture",
+    "Category": "Furniture"
+  },
+  {
+    "Item Name": "Bed (Double)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 2500,
+    "Shop Name": "Village Furniture",
+    "Category": "Furniture"
+  },
+  {
+    "Item Name": "Mat (Cotton, 1 piece)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 250,
+    "Shop Name": "Textile Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Woolen Blanket",
+    "Image Link": "Image Link",
+    "Price (BDT)": 1200,
+    "Shop Name": "Textile Shop",
+    "Category": "Bedding"
+  },
+  {
+    "Item Name": "Quilts (Cotton, 1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 800,
+    "Shop Name": "Textile Shop",
+    "Category": "Bedding"
+  },
+  {
+    "Item Name": "Pillow (1 piece)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Bedding Shop",
+    "Category": "Bedding"
+  },
+  {
+    "Item Name": "Towel (1 piece)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 50,
+    "Shop Name": "Bedding Shop",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Plastic Bucket (5L)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 80,
+    "Shop Name": "Household Goods",
+    "Category": "Household"
+  },
+  {
+    "Item Name": "Cooking Pot (5L)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Kitchenware Shop",
+    "Category": "Kitchenware"
+  },
+  {
+    "Item Name": "Frying Pan (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 150,
+    "Shop Name": "Kitchenware Shop",
+    "Category": "Kitchenware"
+  },
+  {
+    "Item Name": "Wooden Spoon",
+    "Image Link": "Image Link",
+    "Price (BDT)": 30,
+    "Shop Name": "Kitchenware Shop",
+    "Category": "Kitchenware"
+  },
+  {
+    "Item Name": "Knife (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 60,
+    "Shop Name": "Kitchenware Shop",
+    "Category": "Kitchenware"
+  },
+  {
+    "Item Name": "Gas Stove (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 1500,
+    "Shop Name": "Kitchenware Shop",
+    "Category": "Kitchenware"
+  },
+  {
+    "Item Name": "LPG Cylinder (Full)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 1500,
+    "Shop Name": "Gas Shop",
+    "Category": "Fuel & Gas"
+  },
+  {
+    "Item Name": "Charcoal (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 40,
+    "Shop Name": "Local Supplier",
+    "Category": "Fuel & Gas"
+  },
+  {
+    "Item Name": "Firewood (1 bundle)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 100,
+    "Shop Name": "Village Supplier",
+    "Category": "Fuel & Gas"
+  },
+  {
+    "Item Name": "Cement (50 kg bag)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 500,
+    "Shop Name": "Hardware Shop",
+    "Category": "Construction"
+  },
+  {
+    "Item Name": "Brick (1 piece)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 5,
+    "Shop Name": "Construction Shop",
+    "Category": "Construction"
+  },
+  {
+    "Item Name": "Sand (1 cubic ft)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 20,
+    "Shop Name": "Construction Shop",
+    "Category": "Construction"
+  },
+  {
+    "Item Name": "Gravel (1 cubic ft)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 30,
+    "Shop Name": "Construction Shop",
+    "Category": "Construction"
+  },
+  {
+    "Item Name": "Iron Nails (1 kg)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 50,
+    "Shop Name": "Construction Shop",
+    "Category": "Hardware"
+  },
+  {
+    "Item Name": "Nails (Box)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 100,
+    "Shop Name": "Hardware Shop",
+    "Category": "Hardware"
+  },
+  {
+    "Item Name": "Rope (50 ft)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 150,
+    "Shop Name": "Village Hardware",
+    "Category": "Hardware"
+  },
+  {
+    "Item Name": "Paint (1 liter)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Paint Shop",
+    "Category": "Hardware"
+  },
+  {
+    "Item Name": "Garden Hose (10m)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 200,
+    "Shop Name": "Gardening Shop",
+    "Category": "Gardening"
+  },
+  {
+    "Item Name": "Shovel (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 100,
+    "Shop Name": "Gardening Shop",
+    "Category": "Gardening"
+  },
+  {
+    "Item Name": "Hoe (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 80,
+    "Shop Name": "Gardening Shop",
+    "Category": "Gardening"
+  },
+  {
+    "Item Name": "Seeds (Pack)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 50,
+    "Shop Name": "Gardening Shop",
+    "Category": "Gardening"
+  },
+  {
+    "Item Name": "Watering Can (1 unit)",
+    "Image Link": "Image Link",
+    "Price (BDT)": 120,
+    "Shop Name": "Gardening Shop",
+    "Category": "Gardening"
+  }
+]
