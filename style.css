@@ -3,12 +3,15 @@
     --card: #fafafa;
     --muted: #707380;
     --ink: #14151a;
-    --accent: #ff2b85;
+    --accent: #ff2b85; /* foodpanda-ish pink */
     --accent-600: #e22676;
     --accent-50: #fff4f9;
     --ring: rgba(255,43,133,.35);
     --radius: 16px;
     --shadow: 0 8px 24px rgba(20,21,26,.06), 0 2px 6px rgba(20,21,26,.05);
+    --button-radius: 12px;
+    --card-radius: 16px;
+    --input-padding: 12px 16px;
 }
 
 * {
@@ -17,19 +20,17 @@
 
 html, body {
     height: 100%;
-}
-
-body {
     margin: 0;
-    font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: 'Roboto', sans-serif;
     color: var(--ink);
     background: var(--bg);
+    line-height: 1.6;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 20px;
 }
 
 header {
@@ -39,50 +40,42 @@ header {
     backdrop-filter: saturate(180%) blur(8px);
     background: color-mix(in oklab, var(--bg) 80%, white 20%);
     border-bottom: 1px solid #eee;
+    padding: 16px;
 }
 
 .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 12px;
-    padding: 10px 16px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 800;
-    letter-spacing: .2px;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .logo .dot {
-    width: 28px;
-    height: 28px;
-    border-radius: 9px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     background: var(--accent);
     display: grid;
     place-items: center;
     color: white;
     font-weight: 900;
-    box-shadow: 0 3px 10px var(--ring);
-}
-
-.zip {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .zip input {
-    padding: 10px 12px;
+    padding: 10px 15px;
     border: 1px solid #e7e7ea;
     border-radius: 12px;
     outline: none;
     min-width: 110px;
+    font-size: 1rem;
 }
 
 .zip input:focus {
@@ -90,4 +83,202 @@ header {
     box-shadow: 0 0 0 4px var(--ring);
 }
 
-/* Add the rest of the CSS here */
+.filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+@media (min-width: 720px) {
+    .filters {
+        grid-template-columns: 1.2fr 0.8fr 0.8fr 0.6fr;
+    }
+}
+
+.searchbar, select, .shopchip, .sort {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 12px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.searchbar:focus, select:focus, .sort:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--ring);
+}
+
+.chips {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.shopchip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: var(--card);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.shopchip.active {
+    border-color: var(--accent);
+    background: var(--accent-50);
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 720px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #eee;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.thumb {
+    aspect-ratio: 4/3;
+    background: #f2f2f4;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .thumb img {
+    transform: scale(1.05);
+}
+
+.tag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: white;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid #ffd3e6;
+}
+
+.body {
+    padding: 12px 16px;
+    display: grid;
+    gap: 8px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: var(--muted);
+}
+
+.price {
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: white;
+    padding: 12px 16px;
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn.outline {
+    background: white;
+    color: var(--accent);
+}
+
+.empty {
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+    border: 1px dashed #e5e5ea;
+    border-radius: 16px;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #eee, #f8f8f8 50%, #eee);
+    background-size: 200% 100%;
+    animation: shine 1.2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.sk-card {
+    height: 240px;
+    border-radius: var(--card-radius);
+}
+
+footer {
+    padding: 20px 16px;
+    color: var(--muted);
+    text-align: center;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
