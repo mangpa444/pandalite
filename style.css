@@ -85,6 +85,7 @@ header {
     grid-template-columns: 1fr;
     gap: 15px;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 @media (min-width: 720px) {
@@ -101,6 +102,13 @@ header {
     padding: 12px;
     outline: none;
     font-size: 1rem;
+}
+
+/* Make category and shop dropdown scrollable */
+select {
+    max-height: 200px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .searchbar:focus, select:focus, .sort:focus {
@@ -134,6 +142,7 @@ header {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 20px;
 }
 
 @media (min-width: 720px) {
