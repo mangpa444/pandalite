@@ -1,450 +1,514 @@
 [
   {
-    "Item Name": "Rice (1 kg)",
-    "Image Link": "https://i.chaldn.com/_mpimage/paijam-rice-boiled-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D80161&q=best&v=1",
-    "Price (BDT)": 50,
-    "Shop Name": "Village Grocer",
-    "Category": "Grains"
+    "sl": 1,
+    "name": "Rice (1 kg)",
+    "image": "https://cdn0.woolworths.media/content/wowproductimages/large/694550.jpg",
+    "price": 50.0,
+    "shop": "Village Grocer",
+    "category": "Grains"
   },
   {
-    "Item Name": "Wheat Flour (1 kg)",
-    "Image Link": "https://d2t8nl1y0ie1km.cloudfront.net/images/65fa94f0115075f231ec5c18_Teer-Whole-Wheat-Atta-1kg_1.webp",
-    "Price (BDT)": 45,
-    "Shop Name": "Village Grocer",
-    "Category": "Grains"
+    "sl": 2,
+    "name": "Wheat Flour (1 kg)",
+    "image": "https://millsaga.com/wp-content/uploads/2023/11/wheat-flour.png",
+    "price": 45.0,
+    "shop": "Village Grocer",
+    "category": "Grains"
   },
   {
-    "Item Name": "Sugar (1 kg)",
-    "Image Link": "https://i.chaldn.com/_mpimage/loose-white-sugar-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D98364&q=best&v=1",
-    "Price (BDT)": 60,
-    "Shop Name": "Local Mart",
-    "Category": "Sweeteners"
+    "sl": 3,
+    "name": "Sugar (1 kg)",
+    "image": "https://pictures.grocerapps.com/original/grocerapp-sugar-6041d78a23e93.jpeg",
+    "price": 60.0,
+    "shop": "Local Mart",
+    "category": "Sweeteners"
   },
   {
-    "Item Name": "Salt (1 kg)",
-    "Image Link": "https://i.chaldn.com/_mpimage/aci-pure-salt-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D47100&q=best&v=1",
-    "Price (BDT)": 25,
-    "Shop Name": "Local Mart",
-    "Category": "Spices"
+    "sl": 4,
+    "name": "Salt (1 kg)",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2023/5/306049911/WG/WW/SS/33565068/salt-1-kg-packet-1000x1000.jpeg",
+    "price": 25.0,
+    "shop": "Local Mart",
+    "category": "Spices"
   },
   {
-    "Item Name": "Cooking Oil (1 liter)",
-    "Image Link": "https://i.chaldn.com/_mpimage/fresh-fortified-soyabean-oil-1-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D153828&q=best&v=1&m=400",
-    "Price (BDT)": 150,
-    "Shop Name": "Pure Oil Shop",
-    "Category": "Cooking Oils"
+    "sl": 5,
+    "name": "Cooking Oil (1 liter)",
+    "image": "https://ph-test-11.slatic.net/p/eae9cde48606538a6c2bc3a5fc28f55b.jpg",
+    "price": 150.0,
+    "shop": "Pure Oil Shop",
+    "category": "Cooking Oils"
   },
   {
-    "Item Name": "Milk (1 liter)",
-    "Image Link": "https://images.othoba.com/images/thumbs/0071389_pran-mk-uht-milk-1-ltr.jpeg",
-    "Price (BDT)": 40,
-    "Shop Name": "Dairy Farm Shop",
-    "Category": "Dairy"
+    "sl": 6,
+    "name": "Milk (1 liter)",
+    "image": "https://thumbs.dreamstime.com/b/one-liter-milk-7703194.jpg",
+    "price": 40.0,
+    "shop": "Dairy Farm Shop",
+    "category": "Dairy"
   },
   {
-    "Item Name": "Eggs (12 pcs)",
-    "Image Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YL6CCvyORiPmVGgzLRLGfsc6ru95icxvvw&s",
-    "Price (BDT)": 120,
-    "Shop Name": "Village Market",
-    "Category": "Dairy"
+    "sl": 7,
+    "name": "Eggs (12 pcs)",
+    "image": "https://m.media-amazon.com/images/I/315ZDO8t4oL.jpg",
+    "price": 120.0,
+    "shop": "Village Market",
+    "category": "Dairy"
   },
   {
-    "Item Name": "Potatoes (1 kg)",
-    "Image Link": "https://images.othoba.com/images/thumbs/0332578_potato-seasonal-pack-1-kg.jpeg",
-    "Price (BDT)": 35,
-    "Shop Name": "Local Vegetables",
-    "Category": "Vegetables"
+    "sl": 8,
+    "name": "Potatoes (1 kg)",
+    "image": "https://kiasumart.com/wp-content/uploads/2020/08/Potato-1kg.jpg",
+    "price": 35.0,
+    "shop": "Local Vegetables",
+    "category": "Vegetables"
   },
   {
-    "Item Name": "Tomatoes (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 60,
-    "Shop Name": "Local Vegetables",
-    "Category": "Vegetables"
+    "sl": 9,
+    "name": "Tomatoes (1 kg)",
+    "image": "https://freshgrade.ae/wp-content/uploads/2022/08/tomato-1kg_1-e1661102015883.jpg",
+    "price": 60.0,
+    "shop": "Local Vegetables",
+    "category": "Vegetables"
   },
   {
-    "Item Name": "Onions (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 55,
-    "Shop Name": "Fresh Mart",
-    "Category": "Vegetables"
+    "sl": 10,
+    "name": "Onions (1 kg)",
+    "image": "https://shazmart.com/wp-content/uploads/2024/01/20210104_080119_copy_1000x1000.jpg",
+    "price": 55.0,
+    "shop": "Fresh Mart",
+    "category": "Vegetables"
   },
   {
-    "Item Name": "Garlic (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 100,
-    "Shop Name": "Spices World",
-    "Category": "Spices"
+    "sl": 11,
+    "name": "Garlic (1 kg)",
+    "image": "https://rukminim2.flixcart.com/image/416/416/kuipea80/vegetable/u/v/h/garlic-unbranded-no-whole-original-imag7mzqzaqkpeqg.jpeg?q=70",
+    "price": 100.0,
+    "shop": "Spices World",
+    "category": "Spices"
   },
   {
-    "Item Name": "Ginger (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 90,
-    "Shop Name": "Spices World",
-    "Category": "Spices"
+    "sl": 12,
+    "name": "Ginger (1 kg)",
+    "image": "https://oyopasal.com/wp-content/uploads/2023/06/Ginger-1-kg.png",
+    "price": 90.0,
+    "shop": "Spices World",
+    "category": "Spices"
   },
   {
-    "Item Name": "Green Chilies (250 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 30,
-    "Shop Name": "Fresh Mart",
-    "Category": "Vegetables"
+    "sl": 13,
+    "name": "Green Chilies (250 gm)",
+    "image": "https://quickgroceries.pk/wp-content/uploads/2024/06/green_chilli_hot_0_1-296.webp",
+    "price": 30.0,
+    "shop": "Fresh Mart",
+    "category": "Vegetables"
   },
   {
-    "Item Name": "Fresh Fish (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Fisherman's Shop",
-    "Category": "Meat & Seafood"
+    "sl": 14,
+    "name": "Fresh Fish (1 kg)",
+    "image": "https://tiimg.tistatic.com/fp/1/007/976/pack-of-1-kilogram-raw-sea-bass-fresh-fish--128.jpg",
+    "price": 200.0,
+    "shop": "Fisherman's Shop",
+    "category": "Meat & Seafood"
   },
   {
-    "Item Name": "Chicken (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 300,
-    "Shop Name": "Poultry Shop",
-    "Category": "Meat & Seafood"
+    "sl": 15,
+    "name": "Chicken (1 kg)",
+    "image": "https://ik.imagekit.io/wlfr/wellness/images/products/344763-1.jpg/tr:w-3840,dpr-1,c-at_max,cm-pad_resize,ar-1210-700,pr-true,f-webp,q-80,l-image,i-Wellness_logo_BDwqbQao9.png,lfo-bottom_right,w-200,h-90,c-at_least,cm-pad_resize,l-end",
+    "price": 300.0,
+    "shop": "Poultry Shop",
+    "category": "Meat & Seafood"
   },
   {
-    "Item Name": "Beef (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 350,
-    "Shop Name": "Butcher's Shop",
-    "Category": "Meat & Seafood"
+    "sl": 16,
+    "name": "Beef (1 kg)",
+    "image": "https://petertreble.com/wp-content/uploads/2017/07/diced-beef-tray-101.jpg",
+    "price": 350.0,
+    "shop": "Butcher's Shop",
+    "category": "Meat & Seafood"
   },
   {
-    "Item Name": "Vegetables (Mixed, 1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 50,
-    "Shop Name": "Green Market",
-    "Category": "Vegetables"
+    "sl": 17,
+    "name": "Vegetables (Mixed, 1 kg)",
+    "image": "https://cleos.co.za/wp-content/uploads/2024/11/Mixed-Veg-1000x1000.webp",
+    "price": 50.0,
+    "shop": "Green Market",
+    "category": "Vegetables"
   },
   {
-    "Item Name": "Fruits (Mixed, 1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 80,
-    "Shop Name": "Fruit Basket",
-    "Category": "Fruits"
+    "sl": 18,
+    "name": "Fruits (Mixed, 1 kg)",
+    "image": "https://m.media-amazon.com/images/I/81Iqrc8HQ6L._SL1500_.jpg",
+    "price": 80.0,
+    "shop": "Fruit Basket",
+    "category": "Fruits"
   },
   {
-    "Item Name": "Bananas (1 bunch)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 40,
-    "Shop Name": "Fruit Basket",
-    "Category": "Fruits"
+    "sl": 19,
+    "name": "Bananas (1 bunch)",
+    "image": "https://thumbs.dreamstime.com/z/one-bunch-bananas-tropical-fruit-health-52403843.jpg",
+    "price": 40.0,
+    "shop": "Fruit Basket",
+    "category": "Fruits"
   },
   {
-    "Item Name": "Apples (500 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 100,
-    "Shop Name": "Local Fruits",
-    "Category": "Fruits"
+    "sl": 20,
+    "name": "Apples (500 gm)",
+    "image": "https://www.bloomandveg.co.uk/wp-content/uploads/2020/05/Cox-920x920.jpg",
+    "price": 100.0,
+    "shop": "Local Fruits",
+    "category": "Fruits"
   },
   {
-    "Item Name": "Oranges (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 90,
-    "Shop Name": "Local Fruits",
-    "Category": "Fruits"
+    "sl": 21,
+    "name": "Oranges (1 kg)",
+    "image": "https://www.jonesthegrocer.com/images/orange-1kg-p1440-3590_image.jpg",
+    "price": 90.0,
+    "shop": "Local Fruits",
+    "category": "Fruits"
   },
   {
-    "Item Name": "Coffee (250 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 180,
-    "Shop Name": "Grocery Mart",
-    "Category": "Beverages"
+    "sl": 22,
+    "name": "Coffee (250 gm)",
+    "image": "https://www.brewlab.co.in/media/products/brew-lab-premium-instant-coffee-premix-powder-instant-coffee-250-g--2404031815141.jpg",
+    "price": 180.0,
+    "shop": "Grocery Mart",
+    "category": "Beverages"
   },
   {
-    "Item Name": "Tea (250 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 150,
-    "Shop Name": "Grocery Mart",
-    "Category": "Beverages"
+    "sl": 23,
+    "name": "Tea (250 gm)",
+    "image": "https://paimark.com/wp-content/uploads/2024/03/Paimark-Suprabhath-Tea-1024x1024.png",
+    "price": 150.0,
+    "shop": "Grocery Mart",
+    "category": "Beverages"
   },
   {
-    "Item Name": "Biscuits (Pack)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 35,
-    "Shop Name": "Village Snack Shop",
-    "Category": "Snacks"
+    "sl": 24,
+    "name": "Biscuits (Pack)",
+    "image": "https://img.grouponcdn.com/deal/2VbYn6wt7n2GY74BQ6Mm2rKT7g6C/2V-2048x1229/v1/c700x420.jpg",
+    "price": 35.0,
+    "shop": "Village Snack Shop",
+    "category": "Snacks"
   },
   {
-    "Item Name": "Instant Noodles (Pack)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 25,
-    "Shop Name": "Snack World",
-    "Category": "Snacks"
+    "sl": 25,
+    "name": "Instant Noodles (Pack)",
+    "image": "https://m.media-amazon.com/images/I/91k9pflijuL.jpg",
+    "price": 25.0,
+    "shop": "Snack World",
+    "category": "Snacks"
   },
   {
-    "Item Name": "Soap (1 bar)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 20,
-    "Shop Name": "Hygiene Hub",
-    "Category": "Personal Care"
+    "sl": 26,
+    "name": "Soap (1 bar)",
+    "image": "https://www.rollingstone.com/wp-content/uploads/2020/12/81Sw23VeOdL._SL1500_-e1609199088834.jpg?w=1500&h=1054&crop=1",
+    "price": 20.0,
+    "shop": "Hygiene Hub",
+    "category": "Personal Care"
   },
   {
-    "Item Name": "Shampoo (200 ml)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 50,
-    "Shop Name": "Beauty Shop",
-    "Category": "Personal Care"
+    "sl": 27,
+    "name": "Shampoo (200 ml)",
+    "image": "https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750100672111l.jpg",
+    "price": 50.0,
+    "shop": "Beauty Shop",
+    "category": "Personal Care"
   },
   {
-    "Item Name": "Toothpaste (100 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 30,
-    "Shop Name": "Hygiene Hub",
-    "Category": "Personal Care"
+    "sl": 28,
+    "name": "Toothpaste (100 gm)",
+    "image": "https://images.apollo247.in/pub/media/catalog/product/c/o/col0236_1-june23_1_.jpg",
+    "price": 30.0,
+    "shop": "Hygiene Hub",
+    "category": "Personal Care"
   },
   {
-    "Item Name": "Detergent Powder (500 gm)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 40,
-    "Shop Name": "Household Shop",
-    "Category": "Household"
+    "sl": 29,
+    "name": "Detergent Powder (500 gm)",
+    "image": "https://e.saravanaonline.com/5244-large_default/rin-bright-like-new-detergent-powder-500-gm.jpg",
+    "price": 40.0,
+    "shop": "Household Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Cleaning Liquid (500 ml)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 60,
-    "Shop Name": "Household Shop",
-    "Category": "Household"
+    "sl": 30,
+    "name": "Cleaning Liquid (500 ml)",
+    "image": "https://cdn.transfertpress.fr/ressources/images/XXL/cleaning-liquid-esl5-500-ml-6000006365-entretien-et-nettoyage-roland-dg-img-1268.png",
+    "price": 60.0,
+    "shop": "Household Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Mosquito Repellent (100 ml)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 45,
-    "Shop Name": "Health Store",
-    "Category": "Household"
+    "sl": 31,
+    "name": "Mosquito Repellent (100 ml)",
+    "image": "https://www.netmeds.com/images/product-v1/600x600/1075250/beauty_bee_natural_mosquito_repellent_spray_100_ml_521146_0_1.jpg",
+    "price": 45.0,
+    "shop": "Health Store",
+    "category": "Household"
   },
   {
-    "Item Name": "Matches (Pack)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 10,
-    "Shop Name": "Local Mart",
-    "Category": "Household"
+    "sl": 32,
+    "name": "Matches (Pack)",
+    "image": "https://www.aussiestormshop.com.au/assets/alt_1/COG529.jpg?20171101102735",
+    "price": 10.0,
+    "shop": "Local Mart",
+    "category": "Household"
   },
   {
-    "Item Name": "Flashlight (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 150,
-    "Shop Name": "Hardware Shop",
-    "Category": "Household"
+    "sl": 33,
+    "name": "Flashlight (1 unit)",
+    "image": "https://www.kroger.com/product/images/large/back/0075810019296",
+    "price": 150.0,
+    "shop": "Hardware Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Lantern (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Hardware Shop",
-    "Category": "Household"
+    "sl": 34,
+    "name": "Lantern (1 unit)",
+    "image": "https://www.kroger.com/product/images/large/front/0081000510056",
+    "price": 200.0,
+    "shop": "Hardware Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Wooden Chair",
-    "Image Link": "Image Link",
-    "Price (BDT)": 800,
-    "Shop Name": "Village Furniture",
-    "Category": "Furniture"
+    "sl": 35,
+    "name": "Wooden Chair",
+    "image": "https://cdn11.bigcommerce.com/s-vj3z71/images/stencil/2560w/products/671/1763/Wood_Chair_Cherry_Danielson_Wood_Seat__54812.1494621196.JPG?c=2",
+    "price": 800.0,
+    "shop": "Village Furniture",
+    "category": "Furniture"
   },
   {
-    "Item Name": "Wooden Table",
-    "Image Link": "Image Link",
-    "Price (BDT)": 1200,
-    "Shop Name": "Village Furniture",
-    "Category": "Furniture"
+    "sl": 36,
+    "name": "Wooden Table",
+    "image": "https://i5.walmartimages.com/asr/31f39ac5-b02f-40ac-afa1-c91f0e6353c5.156a738d815c24a5c59152e2715fb47d.jpeg",
+    "price": 1200.0,
+    "shop": "Village Furniture",
+    "category": "Furniture"
   },
   {
-    "Item Name": "Bed (Double)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 2500,
-    "Shop Name": "Village Furniture",
-    "Category": "Furniture"
+    "sl": 37,
+    "name": "Bed (Double)",
+    "image": "https://www.decornation.in/wp-content/uploads/2020/03/solid-wood-double-bed-2.jpg",
+    "price": 2500.0,
+    "shop": "Village Furniture",
+    "category": "Furniture"
   },
   {
-    "Item Name": "Mat (Cotton, 1 piece)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 250,
-    "Shop Name": "Textile Shop",
-    "Category": "Household"
+    "sl": 38,
+    "name": "Mat (Cotton, 1 piece)",
+    "image": "https://img1.exportersindia.com/product_images/bc-full/2023/9/12241530/washable-cotton-floor-mats-1690527950-7003922.jpeg",
+    "price": 250.0,
+    "shop": "Textile Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Woolen Blanket",
-    "Image Link": "Image Link",
-    "Price (BDT)": 1200,
-    "Shop Name": "Textile Shop",
-    "Category": "Bedding"
+    "sl": 39,
+    "name": "Woolen Blanket",
+    "image": "https://www.kerrywoollenmills.ie/wp-content/uploads/Blanket-Camel-and-Natural-white-detail-1.jpg",
+    "price": 1200.0,
+    "shop": "Textile Shop",
+    "category": "Bedding"
   },
   {
-    "Item Name": "Quilts (Cotton, 1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 800,
-    "Shop Name": "Textile Shop",
-    "Category": "Bedding"
+    "sl": 40,
+    "name": "Quilts (Cotton, 1 unit)",
+    "image": "https://www.kroger.com/product/images/large/front/0019255187749",
+    "price": 800.0,
+    "shop": "Textile Shop",
+    "category": "Bedding"
   },
   {
-    "Item Name": "Pillow (1 piece)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Bedding Shop",
-    "Category": "Bedding"
+    "sl": 41,
+    "name": "Pillow (1 piece)",
+    "image": "https://onepiece-universe.com/wp-content/uploads/2023/03/Monkey-D-Luffy-Body-Pillow-4.jpg",
+    "price": 200.0,
+    "shop": "Bedding Shop",
+    "category": "Bedding"
   },
   {
-    "Item Name": "Towel (1 piece)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 50,
-    "Shop Name": "Bedding Shop",
-    "Category": "Household"
+    "sl": 42,
+    "name": "Towel (1 piece)",
+    "image": "https://i5.walmartimages.com/asr/0921f590-3d7d-47a3-a571-3f2f640c8987_3.62524580dd724069d0a4cc6a021b3c58.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
+    "price": 50.0,
+    "shop": "Bedding Shop",
+    "category": "Household"
   },
   {
-    "Item Name": "Plastic Bucket (5L)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 80,
-    "Shop Name": "Household Goods",
-    "Category": "Household"
+    "sl": 43,
+    "name": "Plastic Bucket (5L)",
+    "image": "https://hygienedisposables.co.za/wp-content/uploads/2020/08/5L-Buckets-Blue-scaled.jpg",
+    "price": 80.0,
+    "shop": "Household Goods",
+    "category": "Household"
   },
   {
-    "Item Name": "Cooking Pot (5L)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Kitchenware Shop",
-    "Category": "Kitchenware"
+    "sl": 44,
+    "name": "Cooking Pot (5L)",
+    "image": "https://img.ltwebstatic.com/images3_spmp/2024/04/01/8c/1711957359e3e2b676886ecfaa60ba8e8304736689_thumbnail_900x.jpg",
+    "price": 200.0,
+    "shop": "Kitchenware Shop",
+    "category": "Kitchenware"
   },
   {
-    "Item Name": "Frying Pan (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 150,
-    "Shop Name": "Kitchenware Shop",
-    "Category": "Kitchenware"
+    "sl": 45,
+    "name": "Frying Pan (1 unit)",
+    "image": "https://hmr.ph/images/postings/2022/12/639d426459d50.jpg",
+    "price": 150.0,
+    "shop": "Kitchenware Shop",
+    "category": "Kitchenware"
   },
   {
-    "Item Name": "Wooden Spoon",
-    "Image Link": "Image Link",
-    "Price (BDT)": 30,
-    "Shop Name": "Kitchenware Shop",
-    "Category": "Kitchenware"
+    "sl": 46,
+    "name": "Wooden Spoon",
+    "image": "https://i.etsystatic.com/21232771/r/il/3f1745/3263310086/il_1588xN.3263310086_rxh4.jpg",
+    "price": 30.0,
+    "shop": "Kitchenware Shop",
+    "category": "Kitchenware"
   },
   {
-    "Item Name": "Knife (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 60,
-    "Shop Name": "Kitchenware Shop",
-    "Category": "Kitchenware"
+    "sl": 47,
+    "name": "Knife (1 unit)",
+    "image": "https://www.kroger.com/product/images/large/front/0068004462022",
+    "price": 60.0,
+    "shop": "Kitchenware Shop",
+    "category": "Kitchenware"
   },
   {
-    "Item Name": "Gas Stove (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 1500,
-    "Shop Name": "Kitchenware Shop",
-    "Category": "Kitchenware"
+    "sl": 48,
+    "name": "Gas Stove (1 unit)",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2023/4/302809957/RY/RW/CA/188003174/hindflame-1-burner-metro-stainless-steel-manual-gas-stove-500x500.jpg",
+    "price": 1500.0,
+    "shop": "Kitchenware Shop",
+    "category": "Kitchenware"
   },
   {
-    "Item Name": "LPG Cylinder (Full)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 1500,
-    "Shop Name": "Gas Shop",
-    "Category": "Fuel & Gas"
+    "sl": 49,
+    "name": "LPG Cylinder (Full)",
+    "image": "https://mobilegas.co.za/wp-content/uploads/2023/06/Mobile-gas-LPG-All-Cylinders-Product-1.jpg",
+    "price": 1500.0,
+    "shop": "Gas Shop",
+    "category": "Fuel & Gas"
   },
   {
-    "Item Name": "Charcoal (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 40,
-    "Shop Name": "Local Supplier",
-    "Category": "Fuel & Gas"
+    "sl": 50,
+    "name": "Charcoal (1 kg)",
+    "image": "https://img.drz.lazcdn.com/static/pk/p/4a6abe148b84f12a9e5589d9a939b38e.jpg_720x720q80.jpg",
+    "price": 40.0,
+    "shop": "Local Supplier",
+    "category": "Fuel & Gas"
   },
   {
-    "Item Name": "Firewood (1 bundle)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 100,
-    "Shop Name": "Village Supplier",
-    "Category": "Fuel & Gas"
+    "sl": 51,
+    "name": "Firewood (1 bundle)",
+    "image": "https://m.media-amazon.com/images/I/81eB5ox2LqL.jpg",
+    "price": 100.0,
+    "shop": "Village Supplier",
+    "category": "Fuel & Gas"
   },
   {
-    "Item Name": "Cement (50 kg bag)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 500,
-    "Shop Name": "Hardware Shop",
-    "Category": "Construction"
+    "sl": 52,
+    "name": "Cement (50 kg bag)",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2023/4/301542242/WV/RK/VX/187348052/hdpe-woven-sacks-1--1000x1000.jpeg",
+    "price": 500.0,
+    "shop": "Hardware Shop",
+    "category": "Construction"
   },
   {
-    "Item Name": "Brick (1 piece)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 5,
-    "Shop Name": "Construction Shop",
-    "Category": "Construction"
+    "sl": 53,
+    "name": "Brick (1 piece)",
+    "image": "https://ae01.alicdn.com/kf/Se7a9073da0964bfa9393623d900c5bf0o/One-Piece-BrickHeadz-Building-Blocks-Luffy-Nami-Chopper-Sanji-Zoro-Usopp-Ace-Franky-Brook-Robin-Brick.jpg",
+    "price": 5.0,
+    "shop": "Construction Shop",
+    "category": "Construction"
   },
   {
-    "Item Name": "Sand (1 cubic ft)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 20,
-    "Shop Name": "Construction Shop",
-    "Category": "Construction"
+    "sl": 54,
+    "name": "Sand (1 cubic ft)",
+    "image": "https://i.ytimg.com/vi/4vMmf-0giTE/maxresdefault.jpg",
+    "price": 20.0,
+    "shop": "Construction Shop",
+    "category": "Construction"
   },
   {
-    "Item Name": "Gravel (1 cubic ft)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 30,
-    "Shop Name": "Construction Shop",
-    "Category": "Construction"
+    "sl": 55,
+    "name": "Gravel (1 cubic ft)",
+    "image": "https://i.ytimg.com/vi/vtISOOn1i3s/maxresdefault.jpg",
+    "price": 30.0,
+    "shop": "Construction Shop",
+    "category": "Construction"
   },
   {
-    "Item Name": "Iron Nails (1 kg)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 50,
-    "Shop Name": "Construction Shop",
-    "Category": "Hardware"
+    "sl": 56,
+    "name": "Iron Nails (1 kg)",
+    "image": "https://www.racknsell.com/public/thumbs/products/93148/Capture8_500_500.jpg",
+    "price": 50.0,
+    "shop": "Construction Shop",
+    "category": "Hardware"
   },
   {
-    "Item Name": "Nails (Box)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 100,
-    "Shop Name": "Hardware Shop",
-    "Category": "Hardware"
+    "sl": 57,
+    "name": "Nails (Box)",
+    "image": "https://cdn.shopify.com/s/files/1/2517/6268/products/TheNailestCo2674LaVieEnRose.jpg?v=1607451666",
+    "price": 100.0,
+    "shop": "Hardware Shop",
+    "category": "Hardware"
   },
   {
-    "Item Name": "Rope (50 ft)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 150,
-    "Shop Name": "Village Hardware",
-    "Category": "Hardware"
+    "sl": 58,
+    "name": "Rope (50 ft)",
+    "image": "https://images.thdstatic.com/productImages/4cc53a17-37be-4ca2-9137-885663f76eb9/svn/whites-everbilt-rope-73272-64_1000.jpg",
+    "price": 150.0,
+    "shop": "Village Hardware",
+    "category": "Hardware"
   },
   {
-    "Item Name": "Paint (1 liter)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Paint Shop",
-    "Category": "Hardware"
+    "sl": 59,
+    "name": "Paint (1 liter)",
+    "image": "https://ph-test-11.slatic.net/p/ee4941563ffae12fffedd507c635adf9.jpg",
+    "price": 200.0,
+    "shop": "Paint Shop",
+    "category": "Hardware"
   },
   {
-    "Item Name": "Garden Hose (10m)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 200,
-    "Shop Name": "Gardening Shop",
-    "Category": "Gardening"
+    "sl": 60,
+    "name": "Garden Hose (10m)",
+    "image": "https://kmartau.mo.cloudinary.net/9f6bffcd-6ace-4898-a88a-4a6fa99ff628.jpg?tx=w_3840,h_3840",
+    "price": 200.0,
+    "shop": "Gardening Shop",
+    "category": "Gardening"
   },
   {
-    "Item Name": "Shovel (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 100,
-    "Shop Name": "Gardening Shop",
-    "Category": "Gardening"
+    "sl": 61,
+    "name": "Shovel (1 unit)",
+    "image": "https://i.ytimg.com/vi/PzEmF2GgP1g/maxresdefault.jpg",
+    "price": 100.0,
+    "shop": "Gardening Shop",
+    "category": "Gardening"
   },
   {
-    "Item Name": "Hoe (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 80,
-    "Shop Name": "Gardening Shop",
-    "Category": "Gardening"
+    "sl": 62,
+    "name": "Hoe (1 unit)",
+    "image": "https://slideplayer.com/slide/16758793/97/images/1/Shoulder+Dystocia+Drills:+How+One+Unit+Prepares+for+Potential+Obstetric+Emergencies.jpg",
+    "price": 80.0,
+    "shop": "Gardening Shop",
+    "category": "Gardening"
   },
   {
-    "Item Name": "Seeds (Pack)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 50,
-    "Shop Name": "Gardening Shop",
-    "Category": "Gardening"
+    "sl": 63,
+    "name": "Seeds (Pack)",
+    "image": "https://m.media-amazon.com/images/I/81byXx4auoL.jpg",
+    "price": 50.0,
+    "shop": "Gardening Shop",
+    "category": "Gardening"
   },
   {
-    "Item Name": "Watering Can (1 unit)",
-    "Image Link": "Image Link",
-    "Price (BDT)": 120,
-    "Shop Name": "Gardening Shop",
-    "Category": "Gardening"
+    "sl": 64,
+    "name": "Watering Can (1 unit)",
+    "image": "https://www.kroger.com/product/images/large/front/0079949377162",
+    "price": 120.0,
+    "shop": "Gardening Shop",
+    "category": "Gardening"
   }
 ]
