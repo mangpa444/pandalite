@@ -7,7 +7,6 @@
  */
 const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
 
-
 // Function to fetch and load the JSON data
 async function fetchJSON() {
   const response = await fetch(JSON_URL);
@@ -59,37 +58,35 @@ function unique(arr) {
 
 // Hydrate filters for categories and shops
 function hydrateFilters(items) {
+  // Category dropdown
   const cats = unique(items.map(i => i.category)).sort((a, b) => a.localeCompare(b));
   els.category.innerHTML = '<option value="">All categories</option>' + cats.map(c => `<option value="${c}">${c}</option>`).join('');
 
+  // Shop dropdown
   const shops = unique(items.map(i => i.shop)).sort((a, b) => a.localeCompare(b));
   els.shops.innerHTML = '';
+  const shopSelect = $('select', { id: 'shopSelect', className: 'shop-select' });
+  shopSelect.innerHTML = '<option value="">All shops</option>';
   shops.forEach(s => {
-    const chip = $('button', { className: 'shopchip', type: 'button', onclick: () => toggleShop(s, chip) }, [document.createTextNode(s)]);
-    els.shops.append(chip);
+    const option = $('option', { value: s }, [document.createTextNode(s)]);
+    shopSelect.append(option);
   });
-}
+  els.shops.append(shopSelect);
 
-// Toggle active shop filters
-function toggleShop(shop, chip) {
-  if (ACTIVE_SHOPS.has(shop)) { 
-    ACTIVE_SHOPS.delete(shop); 
-    chip.classList.remove('active'); 
-  } else { 
-    ACTIVE_SHOPS.add(shop); 
-    chip.classList.add('active'); 
-  }
-  render();
+  // Make the select dropdown scrollable
+  shopSelect.style.maxHeight = '200px';
+  shopSelect.style.overflowY = 'auto';
 }
 
 // Apply filters to the items
 function applyFilters() {
   const q = els.search.value.trim().toLowerCase();
   const cat = els.category.value;
+  const shop = els.shops.querySelector('select').value;
   const list = ALL_ITEMS.filter(it => {
     const matchesQ = !q || [it.name, it.shop, it.category].some(v => (v || '').toLowerCase().includes(q));
     const matchesCat = !cat || it.category === cat;
-    const matchesShop = ACTIVE_SHOPS.size === 0 || ACTIVE_SHOPS.has(it.shop);
+    const matchesShop = !shop || it.shop === shop;
     return matchesQ && matchesCat && matchesShop;
   });
 
