@@ -1,40 +1,32 @@
 /** 
  * =============================
- * 🔧 CONFIGURE YOUR SHEET HERE
+ * 🔧 CONFIGURE YOUR CSV HERE
  * =============================
- * 1) Open your Google Sheet → File → Share → Anyone with the link: Viewer.
- * 2) Copy the Sheet ID from its URL: https://docs.google.com/spreadsheets/d/👉 SHEET_ID 👈/edit
- * 3) Optional: use the GID of the tab (at the end of the URL). Default is first tab (gid=0).
- * 4) Columns must be: [0]=Name, [1]=Image URL, [2]=Price, [3]=Shop, [4]=Category
+ * 1) Download the Google Sheet as CSV.
+ * 2) Upload the CSV to the `data` folder on GitHub or your server.
+ * 3) Use PapaParse to parse the CSV data.
  */
-const SHEET_ID = "1EkRtmpV6sDOH8XYje1Uft6jc0ukp8LoRgf5VWPDP5kY";   // Your Sheet ID
-const SHEET_GID = "0";  // Sheet name or GID, default is 0 for first tab
+const CSV_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/yourfile.csv";  // Update with your CSV URL
 
-// Function to generate the endpoint for fetching the Google Sheet data
-function getSheetEndpoint() {
-  return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&gid=${SHEET_GID}`;
-}
+// Function to load and parse the CSV data
+async function fetchCSV() {
+  const response = await fetch(CSV_URL);
+  const csvText = await response.text();
 
-// Fetch data from Google Sheets and convert it into usable format
-async function fetchSheet() {
-  const url = getSheetEndpoint();
-  const res = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) throw new Error('Failed to fetch the Google Sheet.');
-  
-  const text = await res.text();
-  const json = JSON.parse(text.replace(/^.*setResponse\(/, '').replace(/\);?$/, ''));
-
-  // Extract the rows and return them formatted as objects
-  const rows = json.table.rows || [];
-  return rows.map((row) => {
-    return {
-      name: row.c[0]?.v || '',
-      image: row.c[1]?.v || '',
-      price: Number(row.c[2]?.v) || 0,
-      shop: row.c[3]?.v || '',
-      category: row.c[4]?.v || '',
-    };
+  // Use PapaParse to parse the CSV data
+  const parsedData = Papa.parse(csvText, {
+    header: true,   // This assumes the first row contains column names
+    skipEmptyLines: true
   });
+
+  // Return the parsed data in the desired format
+  return parsedData.data.map(row => ({
+    name: row["Name"] || '',
+    image: row["Image URL"] || '',
+    price: Number(row["Price"]) || 0,
+    shop: row["Shop"] || '',
+    category: row["Category"] || ''
+  }));
 }
 
 // --- App State and DOM Elements ---
@@ -166,14 +158,14 @@ function renderSkeleton(count = 8) {
   }
 }
 
-// Load the data (either from the Google Sheet or fallback)
+// Load the data (either from the CSV or fallback)
 async function load() {
   renderSkeleton(8);  // Show skeleton loader
   try {
-    const rows = await fetchSheet();
+    const rows = await fetchCSV();
     ALL_ITEMS = rows.length ? rows : SAMPLE_DATA;
   } catch (err) {
-    console.warn('Using sample data because fetching sheet failed:', err);
+    console.warn('Using sample data because fetching CSV failed:', err);
     ALL_ITEMS = SAMPLE_DATA;
   }
   hydrateFilters(ALL_ITEMS);
@@ -187,7 +179,7 @@ async function load() {
   els.sort.addEventListener(ev, render);
 });
 
-// Reload sheet data
+// Reload CSV data
 els.reload.addEventListener('click', load);
 
 // Zip code handling (BD uses 4-digit postal codes)
@@ -204,11 +196,11 @@ els.zip.addEventListener('change', e => {
 // "How to" helper
 els.how.addEventListener('click', e => {
   e.preventDefault();
-  alert(`How to connect your Google Sheet:
+  alert(`How to connect your CSV:
 
-1) Make your Sheet public (Viewer).
-2) Copy the Sheet URL and paste it into SHEET_URL (or just the SHEET_ID).
-3) Keep columns in this order: Name | Image URL | Price | Shop | Category.
+1) Download the Google Sheet as CSV.
+2) Upload the CSV to the 'data' folder in your GitHub repo.
+3) Make sure the columns in the CSV are: Name | Image URL | Price | Shop | Category.
 4) Click "Reload sheet". Done!`);
 });
 
