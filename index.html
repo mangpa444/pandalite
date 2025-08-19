@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodpanda Lite</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> <!-- PapaParse Library -->
 </head>
 
 <body>
@@ -35,7 +36,7 @@
     <main class="container">
         <div class="toolbar">
             <div id="resultCount" aria-live="polite"></div>
-            <button class="btn outline" id="reload">Reload sheet</button>
+            <button class="btn outline" id="reload">Reload Data</button>
         </div>
 
         <div id="grid" class="grid" aria-live="polite" aria-busy="true"></div>
@@ -46,12 +47,10 @@
     </main>
 
     <footer>
-        <small>Demo app. Data is read‑only from a public Google Sheet. Combine items across multiple shops, light theme, super tiny JS. Built for Bangladesh (4‑digit postal codes). <a href="#" id="how">How to connect your Sheet</a>.</small>
+        <small>Demo app. Data is fetched from a JSON file. Built for Bangladesh (4‑digit postal codes).</small>
     </footer>
 
     <script src="script.js"></script>
-   
-
 </body>
 
 </html>
