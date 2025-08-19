@@ -1,12 +1,4 @@
-/** 
- * =============================
- * 🔧 CONFIGURE YOUR JSON HERE
- * =============================
- * 1) Upload your c.json to the /data/ folder in your GitHub repository.
- * 2) Use fetch to retrieve and display the data from the JSON.
- */
 const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
-
 
 // Function to fetch and load the JSON data
 async function fetchJSON() {
@@ -24,12 +16,10 @@ async function fetchJSON() {
 
 // --- App State and DOM Elements ---
 let ALL_ITEMS = [];
-let ACTIVE_SHOPS = new Set();
 
 const els = {
   grid: document.getElementById('grid'),
   category: document.getElementById('category'),
-  shops: document.getElementById('shops'),
   search: document.getElementById('search'),
   sort: document.getElementById('sort'),
   count: document.getElementById('resultCount'),
@@ -62,21 +52,6 @@ function hydrateFilters(items) {
   // Category dropdown
   const cats = unique(items.map(i => i.category)).sort((a, b) => a.localeCompare(b));
   els.category.innerHTML = '<option value="">All categories</option>' + cats.map(c => `<option value="${c}">${c}</option>`).join('');
-
-  // Shop dropdown (without filtering functionality)
-  const shops = unique(items.map(i => i.shop)).sort((a, b) => a.localeCompare(b));
-  els.shops.innerHTML = '';
-  const shopSelect = $('select', { id: 'shopSelect', className: 'shop-select' });
-  shopSelect.innerHTML = '<option value="">All shops</option>';
-  shops.forEach(s => {
-    const option = $('option', { value: s }, [document.createTextNode(s)]);
-    shopSelect.append(option);
-  });
-  els.shops.append(shopSelect);
-
-  // Make the select dropdown scrollable
-  shopSelect.style.maxHeight = '200px';
-  shopSelect.style.overflowY = 'auto';
 }
 
 // Apply filters to the items
@@ -118,7 +93,7 @@ function render() {
     const thumb = $('div', { className: 'thumb' });
     const img = $('img', { alt: it.name, loading: 'lazy' });
     img.src = it.image || `https://placehold.co/600x400?text=${encodeURIComponent(it.name)}`;
-    const tag = $('span', { className: 'tag' }, [document.createTextNode(it.shop || '–')]);
+    const tag = $('span', { className: 'tag' }, [document.createTextNode(it.shop || '–')]);  // Shop name displayed here
     thumb.append(img, tag);
 
     const body = $('div', { className: 'body' });
@@ -182,4 +157,3 @@ els.zip.addEventListener('change', e => {
 
 // Initial load
 load();
-
