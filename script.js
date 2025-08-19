@@ -8,6 +8,7 @@
 const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
 
 
+// Function to fetch and load the JSON data
 async function fetchJSON() {
   const response = await fetch(JSON_URL);
   const data = await response.json();
@@ -40,7 +41,7 @@ const els = {
 
 // Utility function for creating DOM elements
 function $(tag, props = {}, children = []) {
-  const el = Object.assign(document.createElement(tag), props);
+  const el = Object.assign(document.createElement(tag), props);  // Create a valid HTML tag
   for (const c of children) el.append(c);
   return el;
 }
@@ -117,17 +118,17 @@ function render() {
 
   // Create and append each item to the grid
   for (const it of items) {
-    const card = $('.card');
-    const thumb = $('.thumb');
+    const card = $('div', { className: 'card' });  // Create a div with the class "card"
+    const thumb = $('div', { className: 'thumb' });
     const img = $('img', { alt: it.name, loading: 'lazy' });
     img.src = it.image || `https://placehold.co/600x400?text=${encodeURIComponent(it.name)}`;
-    const tag = $('.tag', {}, [document.createTextNode(it.shop || '–')]);
+    const tag = $('span', { className: 'tag' }, [document.createTextNode(it.shop || '–')]);
     thumb.append(img, tag);
 
-    const body = $('.body');
-    const title = $('.title', {}, [document.createTextNode(it.name)]);
-    const meta = $('.meta');
-    const price = $('.price', {}, [document.createTextNode(fmtCurrency(it.price))]);
+    const body = $('div', { className: 'body' });
+    const title = $('div', { className: 'title' }, [document.createTextNode(it.name)]);
+    const meta = $('div', { className: 'meta' });
+    const price = $('span', { className: 'price' }, [document.createTextNode(fmtCurrency(it.price))]);
     const cat = $('span', { textContent: it.category || 'Uncategorized', title: 'Category' });
     meta.append(cat, price);
 
