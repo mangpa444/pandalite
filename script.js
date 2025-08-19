@@ -1,31 +1,22 @@
 /** 
  * =============================
- * 🔧 CONFIGURE YOUR CSV HERE
+ * 🔧 CONFIGURE YOUR JSON HERE
  * =============================
- * 1) Download the Google Sheet as CSV.
- * 2) Upload the CSV to the `data` folder on GitHub or your server.
- * 3) Use PapaParse to parse the CSV data.
+ * 1) Upload your c.json to the /data/ folder in your GitHub repository.
+ * 2) Use fetch to retrieve and display the data from the JSON.
  */
-const CSV_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/yourfile.csv";  // Update with your CSV URL
+const JSON_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/c.json";  // Update with your JSON file URL
 
-// Function to load and parse the CSV data
-async function fetchCSV() {
-  const response = await fetch(CSV_URL);
-  const csvText = await response.text();
-
-  // Use PapaParse to parse the CSV data
-  const parsedData = Papa.parse(csvText, {
-    header: true,   // This assumes the first row contains column names
-    skipEmptyLines: true
-  });
-
-  // Return the parsed data in the desired format
-  return parsedData.data.map(row => ({
-    name: row["Name"] || '',
-    image: row["Image URL"] || '',
-    price: Number(row["Price"]) || 0,
-    shop: row["Shop"] || '',
-    category: row["Category"] || ''
+// Function to fetch and load the JSON data
+async function fetchJSON() {
+  const response = await fetch(JSON_URL);
+  const data = await response.json();
+  return data.map(item => ({
+    name: item.name || '',
+    image: item.image || '',
+    price: Number(item.price) || 0,
+    shop: item.shop || '',
+    category: item.category || ''
   }));
 }
 
@@ -158,14 +149,14 @@ function renderSkeleton(count = 8) {
   }
 }
 
-// Load the data (either from the CSV or fallback)
+// Load the data (either from the JSON or fallback)
 async function load() {
   renderSkeleton(8);  // Show skeleton loader
   try {
-    const rows = await fetchCSV();
+    const rows = await fetchJSON();
     ALL_ITEMS = rows.length ? rows : SAMPLE_DATA;
   } catch (err) {
-    console.warn('Using sample data because fetching CSV failed:', err);
+    console.warn('Using sample data because fetching JSON failed:', err);
     ALL_ITEMS = SAMPLE_DATA;
   }
   hydrateFilters(ALL_ITEMS);
@@ -179,7 +170,7 @@ async function load() {
   els.sort.addEventListener(ev, render);
 });
 
-// Reload CSV data
+// Reload JSON data
 els.reload.addEventListener('click', load);
 
 // Zip code handling (BD uses 4-digit postal codes)
@@ -196,12 +187,12 @@ els.zip.addEventListener('change', e => {
 // "How to" helper
 els.how.addEventListener('click', e => {
   e.preventDefault();
-  alert(`How to connect your CSV:
+  alert(`How to connect your JSON file:
 
-1) Download the Google Sheet as CSV.
-2) Upload the CSV to the 'data' folder in your GitHub repo.
-3) Make sure the columns in the CSV are: Name | Image URL | Price | Shop | Category.
-4) Click "Reload sheet". Done!`);
+1) Save your data as JSON (e.g., c.json).
+2) Upload it to the 'data' folder in your GitHub repo.
+3) The columns in your JSON file must be: Name | Image URL | Price | Shop | Category.
+4) Click "Reload data". Done!`);
 });
 
 // Initial load
