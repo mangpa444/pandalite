@@ -7,11 +7,12 @@
  */
 const JSON_URL = "https://raw.githubusercontent.com/mangpa444/pandalite/main/c.json";  // Update with your JSON file URL
 
-// Function to fetch and load the JSON data
+
 async function fetchJSON() {
   const response = await fetch(JSON_URL);
   const data = await response.json();
   return data.map(item => ({
+    number: item.sl || '',  // Using "sl" as the number
     name: item.name || '',
     image: item.image || '',
     price: Number(item.price) || 0,
@@ -57,11 +58,9 @@ function unique(arr) {
 
 // Hydrate filters for categories and shops
 function hydrateFilters(items) {
-  // Category dropdown
   const cats = unique(items.map(i => i.category)).sort((a, b) => a.localeCompare(b));
   els.category.innerHTML = '<option value="">All categories</option>' + cats.map(c => `<option value="${c}">${c}</option>`).join('');
 
-  // Shop chips
   const shops = unique(items.map(i => i.shop)).sort((a, b) => a.localeCompare(b));
   els.shops.innerHTML = '';
   shops.forEach(s => {
@@ -182,17 +181,6 @@ els.zip.addEventListener('change', e => {
   const val = clampZip(e.target.value);
   e.target.value = val;
   if (val && val.length === 4) localStorage.setItem('bd_zip', val);
-});
-
-// "How to" helper
-els.how.addEventListener('click', e => {
-  e.preventDefault();
-  alert(`How to connect your JSON file:
-
-1) Save your data as JSON (e.g., c.json).
-2) Upload it to the 'data' folder in your GitHub repo.
-3) The columns in your JSON file must be: Name | Image URL | Price | Shop | Category.
-4) Click "Reload data". Done!`);
 });
 
 // Initial load
